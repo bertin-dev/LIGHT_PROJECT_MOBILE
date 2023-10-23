@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/light_plan"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".ui.starting.Onboarding">
+
+
+    <LinearLayout
+        android:id="@+id/logo_desc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="top|center"
+        android:layout_marginTop="100dp"
+        android:padding="30dp"
+        android:layout_weight="90"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/logo"
+            android:contentDescription="@string/light"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/secondary_color"
+            android:text="@string/desc_light"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_weight="10">
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/next"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:textSize="15sp"
+            android:textColor="@color/secondary_color"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

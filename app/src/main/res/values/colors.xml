@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary_color">#0092D3</color>
+    <color name="primary_color_2">#0090d0</color>
+    <color name="secondary_color">#D5A940</color>
+    <color name="secondary_color_2">#E79D36</color>
+    <color name="green">#66C4B0</color>
+    <color name="gray">#A6A8AB</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue_dark">#6780B0</color>
+    <color name="zxing_transparent">#00000000</color>
+    <color name="text_color_secondary_3">#B3FFFFFF</color>
+
+
+    <color name="red_bg_light">#312c2d</color>
+    <color name="yellow_bg_light">#31302c</color>
+    <color name="orange_bg_light">#312e2c</color>
+    <color name="pruple_bg_light">#2f2c31</color>
+    <color name="green_bg_light">#552c312c</color>
+    <color name="red">#FF0000</color>
+    <color name="grisFonce1">#E0E0E0</color>
+</resources>

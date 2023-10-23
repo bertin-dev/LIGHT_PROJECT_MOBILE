@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/withdrawal"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.withdrawal.HomeWithdrawal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/mToolBar"
+            layout="@layout/app_bar_header" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_withdrawal_phone"
+            android:layout_below="@+id/mToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/historiqueDirection1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_arrow_downward_128"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/historiqueDirection1"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/historiqueDirection1"
+                android:layout_gravity="center_vertical|center_horizontal">
+
+                <TextView
+                    android:id="@+id/retraitDirection1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textStyle="bold|italic"
+                    android:text="@string/retrait_telephone"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/sub_retraitDirection1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold|italic"
+                    android:text="@string/desc_retrait_telephone"
+                    android:textSize="12sp"
+                    android:layout_below="@+id/retraitDirection1"/>
+
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_dark"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_below="@+id/rl_withdrawal_phone"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/primary_color"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_withdrawal_card"
+            android:layout_below="@+id/rl_withdrawal_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/historiqueDirection2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/code_qr_bleu"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/historiqueDirection2"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/historiqueDirection2"
+                android:layout_gravity="center_vertical|center_horizontal">
+
+                <TextView
+                    android:id="@+id/retraitDirection2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textStyle="bold|italic"
+                    android:text="@string/retrait_card"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/sub_retraitDirection6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold|italic"
+                    android:text="@string/desc_retrait_card"
+                    android:textSize="12sp"
+                    android:layout_below="@+id/retraitDirection2"/>
+
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_dark"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

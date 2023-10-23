@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootlayout"
+    android:background="@android:color/white"
+    tools:context=".ui.fragments.NotificationsFragment">
+
+
+    <LinearLayout
+        android:id="@+id/notificationsVides"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal|center_vertical"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:foregroundGravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_color"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/NotificationsVides"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <!-- <ListView
+         android:id="@+id/ListViewNotification"
+         android:visibility="visible"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="70dp"
+         android:layout_marginBottom="50dp"
+         android:divider="@color/material_blue_grey_800"
+         android:dividerHeight="2dp"
+         android:footerDividersEnabled="false"/>-->
+
+    <RelativeLayout
+        android:id="@+id/notif_search"
+        android:layout_marginTop="1dp"
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/inputSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/rechercher"
+            android:textColor="@color/white"
+            android:background="@drawable/search_input_style"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:ems="10"
+            android:drawablePadding="8dp"
+            android:inputType="textPersonName"
+            android:drawableLeft="@drawable/ic_baseline_search_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:drawableStart="@drawable/ic_baseline_search_24" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp"
+            android:layout_below="@+id/inputSearch">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_view"
+                android:visibility="visible"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnSuppNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:fabSize="normal"
+        app:backgroundTint="@color/red"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/ic_baseline_delete_forever_24"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_step1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/light_start"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.starting.SplashScreen">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="50dp"
+            android:layout_weight="50"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:background="@drawable/logo"
+                android:contentDescription="@string/light"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:orientation="vertical"
+            android:paddingStart="50dp"
+            android:paddingLeft="50dp"
+            android:paddingEnd="50dp"
+            android:paddingRight="50dp">
+
+            <ProgressBar
+                android:id="@+id/simpleProgressBar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:progressBackgroundTint="@color/primary_color"/>
+            <!--  style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/chargement"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/btn_rounded"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:shadowDx="@android:integer/config_longAnimTime"
+                android:text="@string/start"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

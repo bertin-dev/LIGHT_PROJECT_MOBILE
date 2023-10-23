@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.StatistiquesFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/border"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/txt_transactions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="@string/transactions" />
+
+        <LinearLayout
+            android:id="@+id/totaux"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_transactions"
+            android:background="@drawable/btn_rounded"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/totalRecharge"
+                android:textAllCaps="true" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shadow_background"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iconRecharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_baseline_call_received_24" />
+
+                    <TextView
+                        android:id="@+id/totalRecharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iconRecharge"
+                        android:gravity="center"
+                        android:text="677.21 Fcfa / 30 jours"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <ProgressBar
+                    android:id="@+id/pgbarRecharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:progressBackgroundTint="@color/secondary_color_2"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/totaux_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/totaux"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_rounded_blue"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/totalSend"
+                android:textAllCaps="true" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shadow_background"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iconSend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_baseline_call_made_24" />
+
+                    <TextView
+                        android:id="@+id/totalSend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iconSend"
+                        android:gravity="center"
+                        android:text="677.21 Fcfa / 30 jours"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <ProgressBar
+                    android:id="@+id/pgbarSend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:progressBackgroundTint="@color/secondary_color_2"
+                    android:visibility="visible" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chart1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/totaux_send"
+            android:layout_marginBottom="35dp"
+            android:paddingTop="5dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

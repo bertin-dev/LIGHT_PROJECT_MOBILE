@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.adsyst.light_project_mobile">
+
+    <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_light_2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_light_2_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LIGHT_PROJECT_MOBILE">
+        <activity android:name=".ui.register.GenerateQRCode"></activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".ui.withdrawal.PhoneWithdrawal" />
+        <activity android:name=".ui.register.RegisterCniCard" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".ui.historical.HomeHistorical" />
+        <activity android:name=".ui.Settings" />
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:replace="screenOrientation">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.adsyst.light_project_mobile.ui.starting.MainActivity" />
+        </activity>
+        <activity android:name=".ui.Partenaires" />
+        <activity android:name=".ui.Balance" />
+        <activity android:name=".ui.HomeQRCode" />
+        <activity android:name=".ui.withdrawal.HomeWithdrawal" />
+        <activity android:name=".ui.Deposit" />
+        <activity android:name=".ui.Payment" />
+        <activity android:name=".ui.Transfer" />
+        <activity android:name=".ui.register.Register" />
+        <activity android:name=".ui.starting.Onboarding" />
+        <activity android:name=".ui.starting.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.authentication.LoginStep2" />
+        <activity android:name=".ui.authentication.LoginStep1" />
+        <activity android:name=".ui.starting.MainActivity" />
+    </application>
+
+</manifest>

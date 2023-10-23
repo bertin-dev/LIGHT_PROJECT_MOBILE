@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "LIGHT_PROJECT_MOBILE"

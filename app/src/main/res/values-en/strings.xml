@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LIGHT</string>
+
+    <string name="drawer_open">Menu open</string>
+    <string name="drawer_close">Menu closed</string>
+    <string name="search">Recherche</string>
+    <string name="drawer_frame_layout">DrawerFrameLayout</string>
+    <string name="drawer_activity">DrawerActivity</string>
+
+
+    <string name="erreurQRcode">Unable to scan QR code.
+  Make sure you are on the Light app and try to scan again.</string>
+    <string name="desc_light">Liaison software for financial institutions with the aim of making them communicate.</string>
+
+
+    <string name="connexion">Next</string>
+    <string name="telephone">Phone Number</string>
+    <string name="account1">No account yet ?</string>
+    <string name="save_you">Register</string>
+    <string name="start">Start</string>
+    <string name="light">Logo light</string>
+    <string name="chargement">Loading…</string>
+    <string name="next">Next</string>
+    <string name="password">Password</string>
+    <string name="accueil">Home</string>
+    <string name="transactions">Transactions</string>
+    <string name="pointMarchand">Merchant points</string>
+    <string name="Notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="depot">Deposit</string>
+    <string name="retrait">Withdrawal</string>
+    <string name="qrcode">QR Code</string>
+    <string name="payement">Payment</string>
+    <string name="transfert">transfer</string>
+    <string name="partenaires">Partner</string>
+    <string name="solde">Check Balance</string>
+    <string name="role">Role</string>
+    <string name="categorie">Partner</string>
+    <string name="historique">History</string>
+    <string name="impression">Impression</string>
+    <string name="configuration">Settings</string>
+    <string name="setting">Settings your application</string>
+    <string name="nom">Last Name</string>
+    <string name="prenom">First Name</string>
+    <string name="typePj">N°CNI</string>
+    <string name="email">Email</string>
+    <string name="sexe">Gender</string>
+    <string name="masculin">MALE</string>
+    <string name="feminin">FEMININE</string>
+    <string name="souscrire">Souscribe</string>
+    <string name="telExp">Expeditor phone</string>
+    <string name="telBenef">Beneficiary phone</string>
+    <string name="montant">Amount</string>
+    <string name="valider">Validate</string>
+    <string name="subTitle">Light</string>
+    <string name="register">Subscription - Step 1</string>
+  <string name="register2">Subscription Step Finish</string>
+    <string name="apropos">About</string>
+    <string name="homeCodeQR">Home QR Code</string>
+
+    <string name="monCode">MY CODE</string>
+    <string name="scanner">TO SCAN</string>
+    <string name="partager">Share</string>
+    <string name="erreurSurvenue">An error occurred while sending the images.</string>
+    <string name="erreurSurvenue1">An error has occurred.</string>
+    <string name="erreurSurvenue2">An error occurred while deleting.</string>
+    <string name="lightPartarge">Light Partage QR Code</string>
+    <string name="lightPartarge1">Share Light</string>
+    <string name="lightScan">LIGHT SCAN</string>
+    <string name="defaultlangue">Default Language</string>
+    <string name="francais">French</string>
+    <string name="anglais">English</string>
+
+
+    <string name="selectedLanguage">Language already selected!</string>
+    <string name="deconnexion">Sign Out</string>
+    <string name="confirmExit">Confirm Exit..!!!</string>
+    <string name="confirmExitMsg">Are you sure you want to exit ?</string>
+    <string name="oui">Yes</string>
+    <string name="non">No</string>
+    <string name="NotificationsVides">Empty notifications</string>
+   <string name="supprimer">delete</string>
+    <string name="rechercher">Search</string>
+   <string name="encoursSuppression">Work in progress…</string>
+   <string name="notifVide">Your notifications have been emptied.</string>
+    <string name="tutpriel">Tutorial</string>
+
+  <string name="telephoneCourt">Your phone number is short</string>
+  <string name="echecAuthenfication">Authentication failed</string>
+  <string name="insererPassword">Please enter the password</string>
+  <string name="passwordCourt">Your password is short</string>
+  <string name="insererTelephone">Please insert your phone number</string>
+  <string name="ouvertureEncours">Opening…</string>
+  <string name="veuillezInsererNom">Please insert your Name</string>
+  <string name="veuillezInsererPrenom">Please insert your surname</string>
+  <string name="veuillezInsererTelephone">Please insert your number</string>
+  <string name="veuillezInsererPJ">Please insert your Part number</string>
+  <string name="veuillezInsererAdresse">Please insert your email</string>
+  <string name="veuillezInsererNumCompte">Please insert your password</string>
+  <string name="networkOnline">You are connected to the internet</string>
+  <string name="networkOffline">No connection</string>
+  <string name="verifierNumero">Your number contains less than 9 digits.</string>
+  <string name="add">Add user</string>
+  <string name="retrait_telephone">Phone withdrawal</string>
+  <string name="veuillezInserer">Please insert your</string>
+  <string name="numeroDe">Number of</string>
+  <string name="votre">Your</string>
+  <string name="votreCarteDeverouille">Your Card has been Unlocked</string>
+  <string name="votreCarteVerouille">Your Card is locked.</string>
+  <string name="votreCompteDebite">Your Account has been Debited from</string>
+  <string name="votreNumCarte">Your Account Number is:</string>
+  <string name="invalidCararatere">contains one or more invalid characters</string>
+  <string name="AlertCategorieListDeroulante">category in the drop-down list by refreshing the subscription page</string>
+  <string name="AlertStatutListDeroulante">status in the drop-down list by updating the subscription page.</string>
+  <string name="connexionserver">Connection to server</string>
+  <string name="etape1EnvoiDesDonnees">Step 1: Sending the Data</string>
+  <string name="encoursTelechargement">Loading…</string>
+
+  <string name="phone_exp">Please insert the sender number</string>
+  <string name="phone_benef">Please enter the Beneficiary number</string>
+  <string name="insererMontant">Please insert amount</string>
+  <string name="information">Information</string>
+  <string name="veuillezInsererPassword">Please enter your password</string>
+  <string name="mdpCourt">Your password is short</string>
+  <string name="attenteReponseServer">Awaiting Response</string>
+  <string name="annuler">Cancel</string>
+  <string name="phone">Phone</string>
+  <string name="mysolde">Your account balance is </string>
+  <string name="position">Your position</string>
+  <string name="point_marchands">Merchant points</string>
+  <string name="impossibleUsingCamera">Cannot use camera .. Please allow us to use camera</string>
+  <string name="operationReussie">Successful operation</string>
+  <string name="operation_fail">Operation Failed</string>
+  <string name="operation_succss">Operation Success</string>
+  <string name="tofGallery">Photo gallery</string>
+  <string name="transaction_success">Operation Done Successfully</string>
+  <string name="selectAction">Select an Action</string>
+  <string name="selectionner">Select</string>
+  <string name="camera">Camera</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <string name="expediteur">Sender</string>
+  <string name="destinataire">Destinataire</string>
+  <string name="frais">Fresh</string>
+  <string name="historiqueVide">Empty transaction history</string>
+  <string name="terminer">Finished</string>
+  <string name="verso">to</string>
+  <string name="recto">front</string>
+  <string name="identite">national identity card information</string>
+  <string name="delivrance">Delivrance</string>
+  <string name="expiration">Expiry</string>
+  <string name="dateDelivrance">Date of issue</string>
+  <string name="dateExp">expiration date</string>
+  <string name="insertDateDeliv">Please insert date of issue</string>
+  <string name="insertDateExp">Please insert expiration date</string>
+  <string name="retrait_card">Card withdrawal</string>
+  <string name="totalRecharge">Total recharge</string>
+  <string name="totalSend">"Total Shipment "</string>
+  <string name="telCallbox">Callbox Telephone</string>
+  <string name="telClient">Customer Telephone</string>
+  <string name="insererPhoneCallbox">Please insert the call box number</string>
+  <string name="insererPhoneClient">Please insert customer number</string>
+  <string name="retraitTel">Telephone withdrawal</string>
+  <string name="retraitqrcode">QR Code withdrawal</string>
+  <string name="retraitqrcode1">QR Code withdrawal</string>
+  <string name="desc_retrait_telephone">Make your withdrawals in callboxes</string>
+  <string name="desc_retrait_card">Make your withdrawals in the call boxes using the QR Code</string>
+  <string name="profil">profile</string>
+  <string name="statistiques">Statistics</string>
+  <string name="accueil_callbox">Callbox Home</string>
+  <string name="callbox">Call Box</string>
+  <string name="toleCallbox">Role: Call Box</string>
+  <string name="toleClient">Role: Client</string>
+  <string name="lastconnexion">"Last connection: "</string>
+  <string name="invalidCararatere1">Your email is invalid</string>
+</resources>

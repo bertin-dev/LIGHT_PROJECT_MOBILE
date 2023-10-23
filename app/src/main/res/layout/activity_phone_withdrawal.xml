@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/withdrawal_phone"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.withdrawal.PhoneWithdrawal">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/mToolBar"
+            layout="@layout/app_bar_header" />
+
+        <LinearLayout
+            android:id="@+id/authWindows"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_phone_callbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/telCallbox"
+                android:textColorHint="@color/primary_color"
+                app:counterEnabled="false"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_phone_callbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/border"
+                    android:drawablePadding="7dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:padding="7dp"
+                    android:textColor="@color/primary_color"
+                    android:textColorHint="@color/primary_color"
+                    android:textStyle="bold|italic" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_phone_client"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/telClient"
+                android:textColorHint="@color/primary_color"
+                app:counterEnabled="false"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_phone_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/border"
+                    android:drawablePadding="7dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:padding="7dp"
+                    android:textColor="@color/primary_color"
+                    android:textColorHint="@color/primary_color"
+                    android:textStyle="bold|italic" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_montant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/montant"
+                android:textColorHint="@color/primary_color"
+                app:counterEnabled="false"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_montant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/border"
+                    android:drawablePadding="7dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="7dp"
+                    android:textColor="@color/primary_color"
+                    android:textColorHint="@color/primary_color"
+                    android:textStyle="bold|italic" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+
+                <Button
+                    android:id="@+id/valider_withdrawal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_background_primary"
+                    android:padding="10dp"
+                    android:paddingStart="30dp"
+                    android:paddingLeft="30dp"
+                    android:paddingEnd="30dp"
+                    android:paddingRight="30dp"
+                    android:shadowDx="@android:integer/config_longAnimTime"
+                    android:text="@string/valider"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

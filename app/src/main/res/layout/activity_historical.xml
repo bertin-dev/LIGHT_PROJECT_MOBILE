@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/historical"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.historical.HomeHistorical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/mToolBar"
+            layout="@layout/app_bar_header" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:visibility="visible"
+            android:layout_below="@+id/mToolBar">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_historical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/historiqueVide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:foregroundGravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/primary_color"
+                android:textSize="20sp"
+                android:text="@string/historiqueVide"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:id="@+id/pgbar"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressBackgroundTint="@color/secondary_color_2"
+            android:paddingTop="20sp"/>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
